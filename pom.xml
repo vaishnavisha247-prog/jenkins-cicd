@@ -91,7 +91,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>StudentMangement</finalName>
+		<finalName>StudentManagement</finalName>
 	</build>
 
 </project>
