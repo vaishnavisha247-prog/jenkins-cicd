@@ -5,7 +5,6 @@ import com.example.studentsManagement.StudentManagement.entity.StudentsEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface ImageRepository extends JpaRepository<ImagesEntity, Integer> {
     List<ImagesEntity> findByFilePath(String filePath);
@@ -13,5 +12,5 @@ public interface ImageRepository extends JpaRepository<ImagesEntity, Integer> {
     List<ImagesEntity> findByIdAndStudentsEntity(Integer id , StudentsEntity students);
 
     List<ImagesEntity> findByStudentsEntity(Integer id);
-    List<ImagesEntity> findByFilenameAndStudentsEntity(String filename , StudentsEntity students);
+    List<ImagesEntity> findByFileNameAndStudentsEntity(String fileName , StudentsEntity students);
 }
